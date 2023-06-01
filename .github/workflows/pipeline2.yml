@@ -3,7 +3,7 @@ name: Docker build push pipeline
 on: push
 
 env:
-  VERSION: welcome_flask:1.0
+  VERSION: flask-1.0
   
 jobs:
   docker:
