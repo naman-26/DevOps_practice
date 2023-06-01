@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
     
     - name: Build docker image
-      run: "docker build https://github.com/naman-26/DevOps_practice.git#main:. -t ${{ secrets.USERNAME }}/${{ vars.REPO_NAME }}:${{env.VERSION}}"
+      run: "docker build https://github.com/naman-26/DevOps_practice.git#main: -t ${{ secrets.USERNAME }}/${{ vars.REPO_NAME }}:${{env.VERSION}}"
       
     - name: Push docker image
       run: "docker push ${{ secrets.USERNAME }}/${{ vars.REPO_NAME }}:${{env.VERSION}}"
